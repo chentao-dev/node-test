@@ -32,9 +32,9 @@ var server = http.createServer(function (request, response) {
             <h1>二哈</h1>    
 
             <!-- 再请求/css, 加载css -->
-            <link rel="stylesheet" href="/x">
+            <link rel="stylesheet" href="/css">
             <!-- 再请求/js, 加载js -->
-            <script src="/y"></script>
+            <script src="/js"></script>
         </body>
     `);
     response.end();
