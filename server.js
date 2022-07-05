@@ -31,19 +31,19 @@ var server = http.createServer(function (request, response) {
         <body>
             <h1>二哈</h1>    
 
-            <!-- 再请求/css, 加载css -->
-            <link rel="stylesheet" href="/css">
-            <!-- 再请求/js, 加载js -->
-            <script src="/js"></script>
+            <!-- 再请求css -->
+            <link rel="stylesheet" href="/style.css">
+            <!-- 再请求/js -->
+            <script src="/content.js"></script>
         </body>
     `);
     response.end();
-  } else if (path === "/css") {
+  } else if (path === "/style.css") {
     response.statusCode = 200;
     response.setHeader("Content-Type", "text/css;charset=utf-8");
     response.write(`body{color: red;}`);
     response.end();
-  } else if (path === "/js") {
+  } else if (path === "/content.js") {
     response.statusCode = 200;
     response.setHeader("Content-Type", "text/javascript;charset=utf-8");
     response.write(`alert('这是js内容')`);
