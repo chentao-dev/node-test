@@ -31,9 +31,9 @@ var server = http.createServer(function (request, response) {
         <body>
             <h1>二哈</h1>    
 
-            <!-- 再请求/x, 加载css -->
+            <!-- 再请求/css, 加载css -->
             <link rel="stylesheet" href="/x">
-            <!-- 再请求/y, 加载js -->
+            <!-- 再请求/js, 加载js -->
             <script src="/y"></script>
         </body>
     `);
