@@ -38,12 +38,12 @@ var server = http.createServer(function (request, response) {
         </body>
     `);
     response.end();
-  } else if (path === "/x") {
+  } else if (path === "/css") {
     response.statusCode = 200;
     response.setHeader("Content-Type", "text/css;charset=utf-8");
     response.write(`body{color: red;}`);
     response.end();
-  } else if (path === "/y") {
+  } else if (path === "/js") {
     response.statusCode = 200;
     response.setHeader("Content-Type", "text/javascript;charset=utf-8");
     response.write(`alert('这是js内容')`);
