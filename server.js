@@ -34,7 +34,7 @@ var server = http.createServer(function (request, response) {
             <!-- 再请求css -->
             <link rel="stylesheet" href="/style.css">
             <!-- 再请求/js -->
-            <script src="/content.js"></script>
+            <script src="/main.js"></script>
         </body>
     `);
     response.end();
@@ -43,7 +43,7 @@ var server = http.createServer(function (request, response) {
     response.setHeader("Content-Type", "text/css;charset=utf-8");
     response.write(`body{color: red;}`);
     response.end();
-  } else if (path === "/content.js") {
+  } else if (path === "/main.js") {
     response.statusCode = 200;
     response.setHeader("Content-Type", "text/javascript;charset=utf-8");
     response.write(`alert('这是js内容')`);
